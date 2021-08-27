@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Marno001Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Complex_Number_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Complex_Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Street" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Suburb" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Province" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Country" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Postel_Code" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Customerid" />
+    </Key>
+    <Property Name="Customerid" Type="Int32" Nullable="false" />
+    <Property Name="Fullname" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Contact_Number_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Driver">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Licence_Type" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="freight">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Customerid" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Height" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Weight" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Lenght" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Destination_Address" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="OriginAddress" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Date" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DatePickedUp" Type="Time" Precision="7" />
+    <Property Name="DateDelivered" Type="Time" Precision="7" />
+    <Property Name="Driverid" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="Marno001Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Addresses" EntityType="Self.Address" />
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="Drivers" EntityType="Self.Driver" />
+    <EntitySet Name="freights" EntityType="Self.freight" />
+    <EntitySet Name="Status" EntityType="Self.Status" />
+  </EntityContainer>
+</Schema>
