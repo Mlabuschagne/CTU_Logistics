@@ -20,3 +20,8 @@ C:\Users\Zking001\source\repos\CTU_Logistics\CTU_Logistics\obj\Debug\CTU_Logisti
 C:\Users\Zking001\source\repos\CTU_Logistics\CTU_Logistics\bin\Debug\DBCtuLogistics.mdf
 C:\Users\Zking001\source\repos\CTU_Logistics\CTU_Logistics\bin\Debug\DBCtuLogistics_log.ldf
 C:\Users\Zking001\source\repos\CTU_Logistics\CTU_Logistics\obj\Debug\CTU_Logistics.Form_Customer.resources
+C:\Users\Zking001\source\repos\CTU_Logistics\CTU_Logistics\bin\Debug\CTU_Logistics.exe.manifest
+C:\Users\Zking001\source\repos\CTU_Logistics\CTU_Logistics\bin\Debug\CTU_Logistics.application
+C:\Users\Zking001\source\repos\CTU_Logistics\CTU_Logistics\obj\Debug\CTU_Logistics.exe.manifest
+C:\Users\Zking001\source\repos\CTU_Logistics\CTU_Logistics\obj\Debug\CTU_Logistics.application
+C:\Users\Zking001\source\repos\CTU_Logistics\CTU_Logistics\obj\Debug\CTU_Logistics.BMI.resources
